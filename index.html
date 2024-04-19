@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toboolist Vue</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Vue js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <img class="logo" src="./img/logo.png" alt="logo Boolean con scritta Toboolist">
+        </header>
+        <main>
+            <section> <!-- creazione primo container per aggiunta task -->
+                <div class="input-container">
+                    <input class="box-ins-task" type="text" placeholder="es: Fare la spesa...">
+                    <button class="button-add-task">Add Task</button>
+                </div>
+            </section>
+            <section class="container-grande"> <!-- creazione secondo container (grande) -->
+                <div class="lista"> <!-- inizio lista annidata e task precedenti -->
+                    <ul>
+                        <li>
+                            <h3> &#10148; TASK PRECEDENTI</h3>
+                        </li>
+                        <ul>
+                            <li class="elementi-sottolineati">
+                                <p class="cross">Quarterly Newsletter <span class="editorial">Editorial</span></p>
+                            </li>
+                        </ul>
+                        <!-- task oggi -->
+                        <li>
+                            <h3>&#10148; OGGI</h3>
+                        </li>
+                        <ul>
+                            <li class="elementi-sottolineati">
+                                <p>Recruiting blog post<span class="editorial">Editorial</span></p>
+                            </li>
+                            <li class="elementi-sottolineati">
+                                <p>Mobile app luaunch<span class="q1-goals">Q1 Goals</span></p>
+                            </li>
+                            <li class="elementi-non-sottolineati">
+                                <p>Interview Jhon H. <span class="recruiting">Recruiting</span></p>
+                            </li>
+                            <li class="elementi-sottolineati">
+                                <p>Summit update to mobile storefronts <span class="mobile">Mobile</span></p>
+                            </li>
+                        </ul>
+                        <!-- task prossimi giorni -->
+                        <li>
+                            <h3> &#10148; PROSSIMI GIORNI</h3>
+                        </li>
+                        <ul>
+                            <li class="elementi-non-sottolineati">
+                                <p>Schedule meeting with Alex</p>
+                            </li>
+                            <li class="elementi-sottolineati">
+                                <p>Homepage refresh <span class="website">Website</span></p>
+                            </li>
+                            <li class="elementi-sottolineati">
+                                <p>Onboard new sales team member <span class="sales">Sales</span></p>
+                            </li>
+                            <li class="elementi-sottolineati">
+                                <p>Reviwe editorial calendar <span class="editorial">Editorial</span></p>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
