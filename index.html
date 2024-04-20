@@ -24,12 +24,12 @@
         </div>
         <!-- assegnami classe done se curItem.done è uguale a false -->
         <div class="tasks">
-          <div v-show = "todoList.length === 0" style = text-align:center>Hai eseguito tutte le cose da fare</div>
+          <div v-show = "todoList.length === 0" style = text-align:center>Hai completato tutte le attività</div>
           <ul class="inner-list">
             <li 
             :class="{'done': curItem.done === false }"
-            v-for="(curItem, i) in todoList" @click ="doneItem(i)">
-              <span class="circle" :class ="{'checked':curItem.done === true}, {'delete':curItem.done === false}" >{{curItem.text}}</span>
+            v-for="(curItem, i) in todoList">
+              <span class="circle" :class ="{'checked':curItem.done === true}, {'delete':curItem.done === false}" @click ="doneItem(i)" >{{curItem.text}}</span>
               <button @click ="cancel(i)">X</button>
             </li>
           </ul>
