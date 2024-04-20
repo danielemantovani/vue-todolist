@@ -39,6 +39,7 @@
     height: 30px;
     width: 100px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* secondo container grande */
@@ -66,7 +67,6 @@ ul{
     background-color: white;
     margin-left: 10px;
     margin: 10px ;
-    text-decoration: line-through;
     border-radius: 4px;
     padding: 10px;
 }
@@ -155,9 +155,9 @@ ul{
     border-radius: 10px;
 }
 
-
-
-.cross{
-    text-decoration: line-through black;
+.check{
+    text-decoration: line-through;
 }
+
+
 
