@@ -42,7 +42,7 @@
                             <li 
                             class="elementi-sottolineati"
                             v-for = "curItem in todoList"
-                            :class = """
+                            :class ="{ 'check': curItem.done === true }"
                             >{{ curItem.text }}</li>
                             <!-- <li class="elementi-sottolineati done">
                                 <p>Mobile app luaunch<span class="q1-goals">Q1 Goals</span></p>
