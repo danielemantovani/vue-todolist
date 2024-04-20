@@ -1,163 +1,176 @@
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-    background-color: rgb(237 242 247);
-    height: 80px;
-    text-align: center;
-    margin-bottom: 50px;
+/* COMMON */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
 }
 
-.logo{
-    margin-top: 10px;
+.container {
+  max-width: 42rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #edf2f7;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-/* primo container con funzione inserimento nuovi task */
-
-.input-container{
-    background-color: rgb(237 242 247);
-    height: 80px;
-    width: 1000px;
-    text-align: center;
-    padding-top: 20px;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 1px;
+.btn {
+  font-size: 15px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  color: #c4cbd0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-.box-ins-task{
-    height: 30px;
-    width: 300px;
-    border-radius: 5px;
+.btn-filled {
+  border: 1px solid #14aaf5;
+  background-color: #14aaf5;
+  color: white;
 }
 
-.button-add-task{
-    background-color: rgb(20 170 245);
-    color: white;
-    height: 30px;
-    width: 100px;
-    border-radius: 5px;
-    cursor: pointer;
+.btn-empty {
+  border: 1px solid #c4cbd0;
+  background-color: white;
 }
 
-/* secondo container grande */
+/* HEADER */
 
-.container-grande{
-    background-color: rgb(237 242 247);
-    width: 1000px;
-    height: 600px;
-    padding: 60px;
+header {
+  height: 70px;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  background-color: #edf2f7;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-/* inizio lista annidata, task precedenti */
-
-ol{
-    list-style-type: none;
+#logo {
+  height: 100%;
+  vertical-align: middle;
 }
 
-ul{
-    list-style-type: none;
+#logo-text {
+  font-size: 38px;
+  font-weight: 900;
+  vertical-align: middle;
 }
 
-.elementi-sottolineati{
-    width: 700px;
-    height:40px;
-    background-color: white;
-    margin-left: 10px;
-    margin: 10px ;
-    border-radius: 4px;
-    padding: 10px;
+/* MAIN */
+.top {
+  padding: 20px 50px;
+  border-bottom: 2px solid #f6f8f9;
+  text-align: center;
 }
 
-
-
-.editorial{
-    background-color: rgb(20 170 245);
-    color: white;
-    margin-left: 10px;
-    display: inline-block;
-    width: 80px;
-    height: 20px;
-    text-align: center;
-    border-radius: 10px;
-
+.top input {
+  font-size: 16px;
+  width: 50%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #c4cbd0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* task oggi */
-
-.q1-goals{
-    background-color: rgb(171 93 230);
-    color: white;
-    margin-left: 10px;
-    display: inline-block;
-    width: 80px;
-    height: 20px;
-    text-align: center;
-    border-radius: 10px;
-
+.tasks {
+  padding: 20px 50px;
 }
 
-.elementi-non-sottolineati{
-    width: 700px;
-    height:40px;
-    background-color: white;
-    margin-left: 10px;
-    margin: 10px ;
-    border-radius: 4px;
-    padding: 10px;
+li h3 {
+  text-transform: uppercase;
+  margin-top: 10px;
 }
 
-.recruiting{
-    background-color: rgb(44 198 171);
-    color: white;
-    margin-left: 10px;
-    display: inline-block;
-    width: 80px;
-    height: 20px;
-    text-align: center;
-    border-radius: 10px;
+li h3::before {
+  /* https://www.w3schools.com/cssref/css_entities.asp */
+  content: "\27A4";
+  margin-right: 5px;
 }
 
-.mobile{
-    background-color: rgb(255 155 0);
-    color: white;
-    margin-left: 10px;
-    display: inline-block;
-    width: 80px;
-    height: 20px;
-    text-align: center;
-    border-radius: 10px;
+li {
+  list-style: none;
+  padding: 10px 0;
+  color: #434851;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* task prossimi gionri */
-
-.website{
-    background-color: rgb(236 74 157);
-    color: white;
-    margin-left: 10px;
-    display: inline-block;
-    width: 80px;
-    height: 20px;
-    text-align: center;
-    border-radius: 10px;
+.inner-list li {
+  background-color: white;
+  padding: 12px 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-.sales{
-    background-color:rgb(163 209 22);
-    color: white;
-    margin-left: 10px;
-    display: inline-block;
-    width: 80px;
-    height: 20px;
-    text-align: center;
-    border-radius: 10px;
+li.circle {
+  border-bottom: 1px solid #f6f8f9;
 }
 
-.check{
+li .circle::before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  line-height: 15px;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+li.done {
     text-decoration: line-through;
 }
 
+li .circle.checked::before {
+  content: "\2713";
+  border: 1px solid #2cc6ab;
+  color: #2cc6ab;
+}
 
+li .circle.delete::before {
+  content: "\2717";
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  color: white;
+  vertical-align: middle;
+}
+
+.tag-type-1 {
+  background-color: #09a9ed;
+}
+
+.tag-type-2 {
+  background-color: #ab5de6;
+}
+
+.tag-type-3 {
+  background-color: #2cc6ab;
+}
+
+.tag-type-4 {
+  background-color: #ff9b00;
+}
+
+.tag-type-5 {
+  background-color: #ec4a9d;
+}
+
+.tag-type-6 {
+  background-color: #a3d116;
+}
 
